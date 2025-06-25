@@ -65,6 +65,9 @@ RPM 패키지 설치는 실무에서도 매우 중요함. 이 과정을 요약�
 2. 제거 명령어를 입력하고 rpm -qa로 정상적으로 제거 되었는지 확인한다.
 
 -grep 여러개 잡는 법. AND, OR, NOT
+1. AND ==> 그냥 파이프라인 여러번 ~|grep A |grep B
+2. OR ==> -e 옵션 ~|grep -e A -e B
+3. NOT ==> -v 옵션 ~|grep -v A|grep -v B
 
 ## 번외) 리눅스의 명령어들은...
 - 리눅스의 모든 명령어는 패키지에서 온다.
@@ -117,7 +120,7 @@ RPM 패키지 설치는 실무에서도 매우 중요함. 이 과정을 요약�
 1계층.
 - 물리 계층 ==> 하드웨어
 2계층.
-- 데이터링크 계층 ==> 하드웨어 깡통들을 연결하는 매개체(L2 switch)
+- 데이터링크 계층 ==> 하드웨어 깡통들을 연결하는 매개체(L2 switch) => 요새는 광케이블로 연결한대요. 쩐당
 - **MAC 주소**로 전송.
 3계층.
 - 네트워크 계층 ==> 연결해둔 걸 더 나아가 다른 동네로 갈 수 있는 다리!(L3 switch, Router)
@@ -138,6 +141,10 @@ RPM 패키지 설치는 실무에서도 매우 중요함. 이 과정을 요약�
 ![image](https://github.com/user-attachments/assets/acdf865b-d488-4887-81ec-2fa9d9eda63f)
 
 ## TCP/IP 프로토콜
+==> 3 Layer 네트워크 계층에서, 대표되는 IP protocol
+==> 4 Layer 전송 계층에서, 대표되는 TCP protocol
+- 두 프로토콜의 이름을 따서, OSI 7 Layer의 계층을 실무에서 사용할 때 사용하는 계층을 TCP/IP Protocol이라고 부른다.
+- 위처럼 TCP/IP가 중요하고 대표성을 띄기에 그냥 이렇게 부른다고 하네요. 
 
 ![image](https://github.com/user-attachments/assets/b41611f7-aa9b-496b-88e5-7c481ba7d115)
 ![image](https://github.com/user-attachments/assets/9c7d283e-b7b7-4833-84cf-0b6a74bbb857)
@@ -204,6 +211,9 @@ tcp 공부하면 알아요.
 오른쪽이 pid야.
 
 **arp -a** ==> 맥주소 확인! 
+
+- 사실 원격접속은 크게 두가지. telnet, SSH인데 telnet은 암호화를 하지 않아서, 안전한 ssh로 접속함.
+- winscp는 파일을 옮길 때 유용함.
 
 내일은 클라우드 연결을 해볼 거에용.
 오전 클라우드 Azure. 로 윈도우 리눅스 만들 거임. 접속도 할 거임. 시간 남으면 Auzre도 설명함.
