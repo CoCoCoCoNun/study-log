@@ -112,6 +112,11 @@ bin => command(손상되면 커널이 명령을 내릴 수 없다?)
 - more ==> 스페이스바로 내리고, q로 종료. 다시위로 올리는 것은 불가능.
 - **less ==> 화살표 키로 스크롤 가능!! q로 종료. 양방향으로 스크롤 가능함. 훨씬 유용**
 - **tail ==> 실시간 갱신되는 옵션 -f로 씀.** 수시로 변경되는 내용을 많이 사용.
+- **find**
+![image](https://github.com/user-attachments/assets/c252e86e-6162-49e0-889c-2997c68f45e0)
+- **whereis, which**
+![image](https://github.com/user-attachments/assets/cd61e81e-e4c0-471e-a13a-dd9db8fcba91)
+
 
 
 ## copy,  move
@@ -124,6 +129,8 @@ bin => command(손상되면 커널이 명령을 내릴 수 없다?)
 ## grep
 - ==> 문자열을 찾음
 - ==> 주로 **파이프라인(|)** 와 함께 사용함. 리눅스 배우고 이거 안쓰면 간첩임.
+![image](https://github.com/user-attachments/assets/a14b8cb6-5686-4042-84d8-c34d66d61061)
+
 ---
 
 썰1) 이란 핵시설 공격 스턱스넷(Stuxnet, 악성코드)</br>
